@@ -26,7 +26,6 @@
 
 body {
 font-family: 'Mitr', sans-serif;
-/* แก้ไขจุดนี้: เปลี่ยนโทนสีให้ไล่จาก ฟ้า (#d6eeff) ไป ม่วง (#e8d5f5 และ #f5d6ff) */
 background: linear-gradient(160deg, #d6eeff 0%, #e8d5f5 50%, #f5d6ff 100%);
 min-height: 100vh;
 color: var(--text);
@@ -54,14 +53,21 @@ pointer-events:none; z-index:0;
 .wrap { max-width:480px; margin:0 auto; padding:16px 14px 60px; position:relative; z-index:1; }
 
 /* HEADER */
-.header { text-align:center; padding:28px 0 16px; animation:fadeUp .7s ease both; }
+.header { text-align:center; padding:35px 0 20px; animation:fadeUp .7s ease both; }
 
 .shop-name {
-font-size:1.8rem; font-weight:700;
+/* ปรับขนาดฟอนต์ให้ใหญ่ขึ้นจาก 1.8rem เป็น 2.4rem */
+font-size:2.4rem; font-weight:700;
 color: #c060a0;
-letter-spacing:1.5px;
+letter-spacing:2px;
+/* เพิ่มเงาสีชมพูจางๆ ให้ชื่อร้านดูมีมิติและดูหวานขึ้น */
+text-shadow: 2px 2px 4px rgba(200,80,150,0.15);
+display: flex;
+align-items: center;
+justify-content: center;
+gap: 12px; /* เว้นระยะระหว่างอิโมจิกับชื่อ */
 }
-.shop-sub { font-size:.8rem; color:var(--textl); margin-top:5px; line-height:1.7; }
+.shop-sub { font-size:.8rem; color:var(--textl); margin-top:8px; line-height:1.7; }
 
 .badges { display:flex; justify-content:center; gap:7px; flex-wrap:wrap; margin-top:11px; }
 .badge {
@@ -206,7 +212,7 @@ font-size:.78rem; color:var(--text); text-decoration:none; transition:all .2s;
 
 <div class="wrap">
   <div class="header">
-    <div class="shop-name">waray ✨</div>
+    <div class="shop-name">🎀 waray 🎀</div>
     <div class="shop-sub">
       🖊️ สวัสดีค่ะเรย์นะคะ ยินดีต้อนรับลูกค่าทุกท่านเลยค่ะ<br>
       ✨ เรย์รับทำป้าย ลายน้ำ ตัดป้ายไอดี ดึงกลุ่ม
@@ -235,13 +241,13 @@ font-size:.78rem; color:var(--text); text-decoration:none; transition:all .2s;
   <div class="card">
     <div class="ct"><span class="ic">📋</span> ราคาการทำงาน</div>
     <div style="font-size:.88rem;line-height:1.8;color:#8a3a5c;margin-bottom:8px;">
-      <b>🎀 แนวเฮด & เจ้าหญิง:</b> เริ่มต้น 35 ฿<br>
-      <b>📢 แนว Ads:</b> เริ่มต้น 69 ฿<br>
-      <b>✨ แนวเฉพาะ:</b> เริ่มต้น 79 ฿
+      <b>🎀 แนวเฮด & เจ้าหญิง :</b> เริ่มต้น 35 ฿<br>
+      <b>📢 แนว Ads :</b> เริ่มต้น 69 ฿<br>
+      <b>✨ แนวเฉพาะ :</b> เริ่มต้น 79 ฿
     </div>
     <div class="hi-box" style="margin-bottom:0;">
       <b>💝 ราคาเหมา 3 ป้ายขึ้นไป</b><br>
-      <small>คละแนวได้! ลดให้เยอะๆเลยค่ะ</small>
+      <small>คละแนวได้!</small>
     </div>
   </div>
 
@@ -267,7 +273,7 @@ font-size:.78rem; color:var(--text); text-decoration:none; transition:all .2s;
       <small>ไม่รวมเวลารอคิว</small>
     </div>
     <div class="hi-box" style="margin-bottom:0;">
-      <b>📢 แนว Ads & แนวเฉพาะ: 1 - 7 วัน</b><br>
+      <b>📢 แนว Ads & แนวเฉพาะ : 1 - 7 วัน</b><br>
       <small>ไม่รวมเวลารอคิว</small>
     </div>
   </div>
