@@ -1,5 +1,4 @@
 <!DOCTYPE html>
-
 <html lang="th">
 <head>
 <meta charset="UTF-8">
@@ -55,17 +54,31 @@ pointer-events:none; z-index:0;
 /* HEADER */
 .header { text-align:center; padding:35px 0 20px; animation:fadeUp .7s ease both; }
 
+/* เพิ่มสไตล์ Logo */
+.logo-wrapper {
+  margin-bottom: 15px;
+  display: flex;
+  justify-content: center;
+}
+.logo-img {
+  width: 120px; /* ปรับขนาดโลโก้ตามต้องการ */
+  height: 120px;
+  object-fit: cover;
+  border-radius: 50%;
+  border: 4px solid #fff;
+  box-shadow: 0 8px 20px rgba(200,80,150,0.2);
+  background: #fff;
+}
+
 .shop-name {
-/* ปรับขนาดฟอนต์ให้ใหญ่ขึ้นจาก 1.8rem เป็น 2.4rem */
 font-size:2.4rem; font-weight:700;
 color: #c060a0;
 letter-spacing:2px;
-/* เพิ่มเงาสีชมพูจางๆ ให้ชื่อร้านดูมีมิติและดูหวานขึ้น */
 text-shadow: 2px 2px 4px rgba(200,80,150,0.15);
 display: flex;
 align-items: center;
 justify-content: center;
-gap: 12px; /* เว้นระยะระหว่างอิโมจิกับชื่อ */
+gap: 12px;
 }
 .shop-sub { font-size:.8rem; color:var(--textl); margin-top:8px; line-height:1.7; }
 
@@ -212,7 +225,11 @@ font-size:.78rem; color:var(--text); text-decoration:none; transition:all .2s;
 
 <div class="wrap">
   <div class="header">
-    <div class="shop-name">🎀 waray 🎀</div>
+    <div class="logo-wrapper">
+      <img src="logo.png" alt="Logo" class="logo-img">
+    </div>
+    
+    <div class="shop-name">🦊 waray 🦊</div>
     <div class="shop-sub">
       🖊️ สวัสดีค่ะเรย์นะคะ ยินดีต้อนรับลูกค่าทุกท่านเลยค่ะ<br>
       ✨ เรย์รับทำป้าย ลายน้ำ ตัดป้ายไอดี ดึงกลุ่ม
@@ -252,7 +269,7 @@ font-size:.78rem; color:var(--text); text-decoration:none; transition:all .2s;
   </div>
 
   <div class="card">
-    <div class="ct"><span class="ic">🎨</span> แนวศิลป์ที่มีในร้าน</div>
+    <div class="ct"><span class="ic">🎨</span> แนวเฉพาะที่มีในร้าน</div>
     <div style="font-size:.85rem;line-height:1.8;color:#8a3a5c;">
       ✨ แนวออโร่ร่า<br>
       ☁️ แนวเมฆนุ่มฟูเจน 2<br>
@@ -367,7 +384,7 @@ font-size:.78rem; color:var(--text); text-decoration:none; transition:all .2s;
     <div class="socs">
       <a href="https://www.facebook.com/share/1AjUVUizBm/?mibextid=wwXIfr" class="soc" target="_blank">📘 Facebook</a>
       <a href="http://lin.ee/xC5xdEa" class="soc" target="_blank">💚 LINE</a>
-      <a href="https://x.com/ray_whsiso?s=21" class="soc" target="_blank">❌ X</a>
+      <a href="https://x.com/ray_whsiso?s=21" class="soc" target="_blank">✉️X</a>
     </div>
     <div>made with 💕 · waray · ร้านทำป้ายออนไลน์</div>
   </div>
