@@ -25,11 +25,10 @@
   * { margin:0; padding:0; box-sizing:border-box; }
 
 body {
-/* แก้ไขเครื่องหมายคำพูดให้เป็นมาตรฐานโค้ด */
 font-family: 'Mitr', sans-serif;
-background: linear-gradient(160deg, #fde8f5 0%, #f5d6ff 50%, #d6eeff 100%);
+/* แก้ไขจุดนี้: เปลี่ยนโทนสีให้ไล่จาก ฟ้า (#d6eeff) ไป ม่วง (#e8d5f5 และ #f5d6ff) */
+background: linear-gradient(160deg, #d6eeff 0%, #e8d5f5 50%, #f5d6ff 100%);
 min-height: 100vh;
-/* แก้ไขตัวแปรขีดกลางยาว -- เป็น -- */
 color: var(--text);
 overflow-x: hidden;
 }
@@ -38,8 +37,8 @@ body::before {
 content: '';
 position:fixed; inset:0;
 background:
-radial-gradient(circle at 15% 15%, rgba(240,160,210,0.25) 0%, transparent 45%),
-radial-gradient(circle at 85% 85%, rgba(190,150,240,0.25) 0%, transparent 45%);
+radial-gradient(circle at 15% 15%, rgba(214,238,255,0.3) 0%, transparent 45%),
+radial-gradient(circle at 85% 85%, rgba(201,168,232,0.25) 0%, transparent 45%);
 pointer-events:none; z-index:0;
 }
 
